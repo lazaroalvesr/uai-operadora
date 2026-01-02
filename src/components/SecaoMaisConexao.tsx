@@ -1,4 +1,4 @@
-import { Wifi, TrendingUp, Ban, DollarSign, Check } from "lucide-react"
+import { Wifi, TrendingUp, Ban, DollarSign, Check, CardSim } from "lucide-react"
 import Link from "next/link"
 
 const message = `Olá! Vi os planos da UAI+ no site e tenho interesse em um dos planos. Poderiam me enviar mais informações, por favor?`
@@ -81,6 +81,13 @@ export const SecaoMaisConexao = () => {
                                 </div>
                                 <h3 className="font-bold text-white mb-2">Preço fixo</h3>
                                 <p className="text-sm text-gray-400">Sem surpresas</p>
+                            </div>
+                            <div className="bg-gray-900 border cursor-pointer border-gray-800 rounded-lg p-6 hover:bg-gray-800 transition-colors">
+                                <div className="w-12 h-12 bg-[#030712] rounded-lg flex items-center justify-center mb-4">
+                                    <CardSim  className="w-6 h-6 text-[#E97527]" />
+                                </div>
+                                <h3 className="font-bold text-white mb-2">Chip gratuito</h3>
+                                <p className="text-sm text-gray-400">    Em caso de perda, a substituição é feita de forma rápida, prática e sem burocracia.</p>
                             </div>
                         </div>
                     </div>

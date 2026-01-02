@@ -15,7 +15,7 @@ export const AtendimentoPage = () => {
             <div className="container mx-auto px-4 relative  z-10">
                 <div className="max-w-5xl mx-auto">
                     <p className="text-xl md:text-2xl text-center text-gray-300 leading-relaxed mb-12 max-w-3xl mx-auto font-medium">
-                        Não gostou? É só cancelar. Sem multa, sem contrato preso e sem burocracia.
+                        Não gostou? É só cancelar. Sem multa, sem fidelização e sem burocracia.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
                         <div className="bg-white/5 backdrop-blur-sm border cursor-pointer border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-[#E97527]/50 transition-all duration-300 group">
@@ -44,8 +44,8 @@ export const AtendimentoPage = () => {
                                     />
                                 </svg>
                             </div>
-                            <h3 className="text-white font-bold text-lg mb-2">Sem Contrato</h3>
-                            <p className="text-gray-400 text-sm">Total liberdade, sem compromissos longos</p>
+                            <h3 className="text-white font-bold text-lg mb-2">Sem fidelização </h3>
+                            <p className="text-gray-400 text-sm">Total liberdade, sem contratos de longo prazo</p>
                         </div>
 
                         <div className="bg-white/5 backdrop-blur-sm border cursor-pointer border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-[#E97527]/50 transition-all duration-300 group">

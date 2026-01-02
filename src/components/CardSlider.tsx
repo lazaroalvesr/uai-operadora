@@ -160,6 +160,7 @@ export const InfosPlans: CardPlanProps[] = [
     planName: "UAI+",
     planDescription: "Entretenimento completo com ultra franquia e TV inclusa",
     QtdMega: "50GB",
+    tv: true,
     beneficios: [
       {
         icon: <Image src="/Icons/whatsapp-icon.svg" alt="WhatsApp" width={20} height={20} />,
@@ -170,7 +171,7 @@ export const InfosPlans: CardPlanProps[] = [
       {
         icon: <Tv size={20} />,
         backgroundColor: "bg-[#E97527]",
-        title: "TV Incluso"
+        title: "TV Grátis"
       },
       {
         icon: <Image src="/Icons/telefone.png" alt="Telefone" width={18} height={18} />,
@@ -190,6 +191,7 @@ export const InfosPlans: CardPlanProps[] = [
     planName: "UAI+",
     planDescription: "O plano definitivo: máxima velocidade, dados gigantes e TV",
     QtdMega: "80GB",
+    tv: true,
     beneficios: [
       {
         icon: <Image src="/Icons/whatsapp-icon.svg" alt="WhatsApp" width={20} height={20} />,
@@ -200,7 +202,7 @@ export const InfosPlans: CardPlanProps[] = [
       {
         icon: <Tv size={20} />,
         backgroundColor: "bg-[#E97527]",
-        title: "TV Incluso"
+        title: "TV Grátis"
       },
       {
         icon: <Image src="/Icons/telefone.png" alt="Telefone" width={18} height={18} />,
@@ -317,7 +319,7 @@ export const CardSlider = () => {
           const [reais, centavos] = item.price?.split(',') || ['0', '00'];
           const temTV = item.beneficios?.some(b => b.title === "TV Incluso");
           const message = `Olá! Quero contratar o plano UAI+ de ${item.QtdMega}${temTV ? " com TV inclusa" : ""}.`;
-           const whatsappLink = `https://api.whatsapp.com/send?phone=5508007359501&text=${encodeURIComponent(message)}`;
+          const whatsappLink = `https://api.whatsapp.com/send?phone=5508007359501&text=${encodeURIComponent(message)}`;
 
           return (
             <div
@@ -337,6 +339,11 @@ export const CardSlider = () => {
                     <span className="rounded-full bg-gradient-to-r from-green-400 to-emerald-500 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-black shadow-lg">
                       🎁 Chip Grátis
                     </span>
+                    {item.tv && (
+                      <span className="rounded-full bg-gradient-to-r from-green-400 to-emerald-500 px-4 py-1.5 flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-wide text-black shadow-lg">
+                        <Tv /> TV Grátis
+                      </span>
+                    )}
                   </div>
                   <p className="mb-8 lg:text-2xl text-center text-base w-72 md:w-full md:text-start lg:text-start font-light leading-tight lg:w-[600px] wrap-break-word">
                     {item.planDescription}
