@@ -5,7 +5,6 @@ import Link from "next/link"
 import { LiFooter } from "./LiFooter"
 import { liFooterText } from '@/lib/utils'
 import { useEffect, useState } from "react"
-import ChatBot from "./chatbot"
 import { Phone, MessageCircle } from "lucide-react"
 
 export const Footer = () => {
@@ -57,7 +56,6 @@ export const Footer = () => {
                         <div>
                             <h4 className="text-gray-50 font-semibold text-base mb-4">Contato</h4>
 
-                            {/* Telefone */}
                             <Link
                                 href="tel:08007359501"
                                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors mb-3 group"
@@ -68,7 +66,6 @@ export const Footer = () => {
                                 <span className="text-sm font-medium">0800 735 9501</span>
                             </Link>
 
-                            {/* WhatsApp */}
                             <Link
                                 href={whatsappLink}
                                 target="_blank"
@@ -85,7 +82,6 @@ export const Footer = () => {
                         <div>
                             <h4 className="text-gray-50 font-semibold text-base mb-4">Redes Sociais</h4>
                             <div className="flex gap-3">
-                                {/* Instagram */}
                                 <Link
                                     href="https://instagram.com"
                                     target="_blank"
@@ -96,7 +92,6 @@ export const Footer = () => {
                                     </svg>
                                 </Link>
 
-                                {/* Facebook */}
                                 <Link
                                     href="https://facebook.com"
                                     target="_blank"
@@ -125,7 +120,24 @@ export const Footer = () => {
                     </Link>
                 </div>
             </div>
-            <ChatBot />
+            <div className="fixed bottom-12 right-6 bg-[#E97527] p-3 rounded-2xl">
+                <Link
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative cursor-pointer group">
+                    <Image
+                        src="/icons/whatsapp-icon.svg"
+                        alt="Ícone WhatsApp"
+                        width={20}
+                        height={20}
+                        className="hover:cursor-pointer lg:w-[40px]"
+                    />
+                    <span className="absolute transform top-[53px] lg:w-[220px] lg:-left-36 -left-32 w-[200px] -translate-x-1/2 -translate-y-full bg-gray-800 text-white text-base p-2 rounded opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        Tem dúvidas? Vamos conversar!
+                    </span>
+                </Link>
+            </div>
         </footer>
     )
 }
