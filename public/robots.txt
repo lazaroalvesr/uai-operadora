@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Páginas permitidas
+Allow: /quem-somos
+Allow: /termos
+Allow: /privacidade
+
+# Sitemap estático
+Sitemap: https://www.uaimais.com.br/sitemap.xml

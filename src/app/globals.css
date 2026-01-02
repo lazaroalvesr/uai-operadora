@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F9FAFB;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #F9FAFB;
+    --foreground: black;
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.animateOpenMenuMobile {
+  animation: slideInFromRight 0.3s ease-in-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    right: -100%;
+    opacity: 0;
+  }
+
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1023px) {
+  .animateOpenMenuMobile {
+    animation: slideInFromRight 0.3s ease-in-out forwards;
+  }
+}
+
+@media (min-width: 1024px) {
+  .animateOpenMenuMobile {
+    animation: none;
+    position: static;
+    right: auto;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.text-color-gray {
+  color: #F3F3F3;
+}
+
+.text-color-secondary-gray {
+  color: #F0F4F8;
+}
+
+
+.text-color-orange {
+  color: #E97527;
+}
+
+.bg-color-button-call {
+  background-color: #4A6DD3;
+}
+
+.bg-color-gray {
+  background-color: #F3F3F3;
+}
+
+.bg-color-orange {
+  background-color: #E97527;
+}
+
+@keyframes openMenuMobile {
+  from {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes closeMenuMobile {
+  0% {
+    max-height: 420px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    max-height: 0px;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.animateOpenMenuMobile {
+  animation: openMenuMobile 0.3s ease forwards;
+  overflow: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollVerticalModal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollVerticalModal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollVerticalModal::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.scrollVerticalModal::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.barra-preco {
+  position: absolute;
+  width: 3px;
+  height: 40px;
+  background-color: gray;
+  left: 170px;
+  bottom: 262px;
+}
