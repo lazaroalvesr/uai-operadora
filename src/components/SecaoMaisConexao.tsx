@@ -86,8 +86,8 @@ export const SecaoMaisConexao = () => {
                                 <div className="w-12 h-12 bg-[#030712] rounded-lg flex items-center justify-center mb-4">
                                     <CardSim  className="w-6 h-6 text-[#E97527]" />
                                 </div>
-                                <h3 className="font-bold text-white mb-2">Chip gratuito</h3>
-                                <p className="text-sm text-gray-400">    Em caso de perda, a substituição é feita de forma rápida, prática e sem burocracia.</p>
+                                <h3 className="font-bold text-white mb-2">Perdeu o chip?</h3>
+                                <p className="text-sm text-gray-400">A troca é feita de forma rápida, prática e sem burocracia.</p>
                             </div>
                         </div>
                     </div>
