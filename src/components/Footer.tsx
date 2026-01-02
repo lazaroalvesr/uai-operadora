@@ -127,7 +127,7 @@ export const Footer = () => {
                     rel="noopener noreferrer"
                     className="relative cursor-pointer group">
                     <Image
-                        src="/icons/whatsapp-icon.svg"
+                        src="/Icons/whatsapp-icon.svg"
                         alt="Ícone WhatsApp"
                         width={20}
                         height={20}
