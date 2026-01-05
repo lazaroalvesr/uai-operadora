@@ -34,12 +34,12 @@ export const metadata: Metadata = {
 
 export default function PoliticaDePrivacidade() {
     return (
-        <div className="min-h-screen bg-gray-50 pt-20">
+        <div className="min-h-screen bg-gray-50 lg:pt-44 pt-40">
             <div className="container mx-auto px-4 py-8 max-w-4xl">
                 <div className="mb-8">
 
                     <div className="flex items-center gap-3 mb-2 lg:justify-center pb-4">
-                        <Shield className="h-8 w-8 text-color-blue" />
+                        <Shield className="h-8 w-8" color="#E97527" />
                         <h1 className="lg:text-3xl text-2xl font-bold text-gray-900">Política de Privacidade</h1>
                     </div>
 
