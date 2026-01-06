@@ -317,8 +317,8 @@ export const CardSlider = () => {
       >
         {InfosPlans.map((item, index) => {
           const [reais, centavos] = item.price?.split(',') || ['0', '00'];
-          const temTV = item.beneficios?.some(b => b.title === "TV Incluso");
-          const message = `Olá! Quero contratar o plano UAI+ de ${item.QtdMega}${temTV ? " com TV inclusa" : ""}.`;
+          const message = `Olá! Quero contratar o plano UAI+ de ${item.QtdMega}${item.tv ? " com TV Grátis" : ""
+            }.`;
           const whatsappLink = `https://api.whatsapp.com/send?phone=5508007359501&text=${encodeURIComponent(message)}`;
 
           return (
@@ -388,6 +388,8 @@ export const CardSlider = () => {
                   </div>
                   <Link
                     href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="rounded-full mt-4 flex lg:w-[260px] w-full items-center justify-center cursor-pointer text-center bg-[#e97527] px-8 py-4 text-base font-semibold text-gray-50 transition-colors hover:bg-orange-400">
                     Contratar no WhatsApp
                   </Link>
