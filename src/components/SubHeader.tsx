@@ -29,8 +29,25 @@ export const SubHeader = () => {
                             width={23}
                             height={23}
                         />
-                        <p className="text-gray-50 text-[14px] font-medium lg:flex hidden">
+                        <p className="text-gray-50 text-[14px] font-medium md:flex lg:flex hidden">
                             0800 735 9501
+                        </p>
+                    </Link>
+
+                    <div className="w-0.5 h-8 bg-gray-700"></div>
+
+                    <Link
+                        href="tel:08007359501"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 lg:gap-3 hover:opacity-80 transition-opacity">
+                        <Image
+                            src="/Icons/telefone_subHeader.png"
+                            alt="Ícone telefone"
+                            width={23}
+                            height={23}
+                        />
+                        <p className="text-gray-50 text-[14px] font-medium md:flex lg:flex hidden">
+                            (33) 3751-1131
                         </p>
                     </Link>
 
