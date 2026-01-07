@@ -37,12 +37,13 @@ export const SubHeader = () => {
                     <div className="w-0.5 h-8 bg-gray-700"></div>
 
                     <Link
-                        href="tel:08007359501"
+                        href="tel:+553337511131"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 lg:gap-3 hover:opacity-80 transition-opacity">
+                        className="flex items-center gap-2 lg:gap-3 hover:opacity-80 transition-opacity"
+                    >
                         <Image
                             src="/Icons/telefone_subHeader.png"
-                            alt="Ícone telefone"
+                            alt="Phone icon"
                             width={23}
                             height={23}
                         />
