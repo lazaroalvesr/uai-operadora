@@ -19,8 +19,7 @@ export const SubHeader = () => {
                 </Link>
 
                 <div className="flex items-center gap-4 lg:gap-4">
-                    <Link
-                        href="tel:08007359501"
+                    <div
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 lg:gap-3 hover:opacity-80 transition-opacity">
                         <Image
@@ -29,40 +28,52 @@ export const SubHeader = () => {
                             width={23}
                             height={23}
                         />
+                        <Image
+                            src="/Icons/icon_verde_whatsapp.png"
+                            alt="Ícone telefone"
+                            width={23}
+                            height={23}
+                            className="flex lg:w-5 lg:h-5"
+                        />
                         <p className="text-gray-50 text-[14px] font-medium md:flex lg:flex hidden">
                             0800 735 9501
                         </p>
-                    </Link>
+                    </div>
 
                     <div className="w-0.5 h-8 bg-gray-700"></div>
 
-                    <Link
-                        href="tel:+553337511131"
+                    <div
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 lg:gap-3 hover:opacity-80 transition-opacity"
-                    >
+                        className="flex items-center gap-2 lg:gap-3 hover:opacity-80 transition-opacity">
                         <Image
                             src="/Icons/telefone_subHeader.png"
                             alt="Phone icon"
                             width={23}
                             height={23}
                         />
+                          <Image
+                            src="/Icons/icon_verde_whatsapp.png"
+                            alt="Ícone telefone"
+                            width={23}
+                            height={23}
+                            className="flex lg:w-5 lg:h-5"
+                        />
                         <p className="text-gray-50 text-[14px] font-medium md:flex lg:flex hidden">
                             (33) 3751-1131
                         </p>
-                    </Link>
+                    </div>
 
                     <Link
                         href={whatsappLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-[#e97527] text-gray-50 px-4 lg:px-7 py-2 h-9 items-center justify-center text-center flex rounded-full hover:bg-[#f9731a] transition-colors duration-300 ease-in-out text-sm lg:text-base font-medium whitespace-nowrap">
+                        className="bg-[#e97527] text-gray-50 px-4 lg:px-7 py-2 h-9 lg:gap-2 items-center justify-center text-center flex rounded-full hover:bg-[#f9731a] transition-colors duration-300 ease-in-out text-sm lg:text-base font-medium whitespace-nowrap">
                         <Image
                             src="/Icons/icone_whatsapp.png"
                             alt="Ícone telefone"
                             width={23}
                             height={23}
-                            className="lg:hidden flex"
+                            className="flex lg:w-5 lg:h-5"
                         />
                         <p className="text-gray-50 text-[14px] font-medium lg:flex hidden">
                             Falar no WhatsApp
